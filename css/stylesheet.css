@@ -2,18 +2,43 @@ body {
 	margin: 0;
 	padding: 0;
 	display: flex;
+	flex-direction: column;
+	height: 100vh;
+
+	justify-content: space-between;
 
 }
+
+
+/* background colors for easier visibility */
+header {
+	background-color: lightblue;
+}
+footer {
+	background-color: lightpink;
+}
+
+header, footer {
+	/* as a flex item, don't grow, don't shrink, and only take up as much space as the content needs */
+	flex: 0 0 auto;
+}
+
 
 main {
+	/* styling stuff */
+	background-color: yellow;
+	padding: 3rem;
 
-}
+	/* as a flex item, grow as needed, shrink as needed, and only take up as much space as required */
+	flex: 1 1 auto;
 
-header {
+	/* act as a flex container */
+	display: flex;
 
-}
+	/* align the content ALONG the main flex axis - this can be either horizontal or vertical depending on the flex-direction */
+	justify-content: center;
 
-
-footer {
+	/* align items ACROSS the main flex axix */
+	align-items: center;
 
 }
