@@ -17,16 +17,16 @@ header {
 footer {
 	background-color: lightpink;
 }
-
+main {
+	background-color: yellow;
+}
 header, footer {
 	/* as a flex item, don't grow, don't shrink, and only take up as much space as the content needs */
 	flex: 0 0 auto;
 }
 
-
 main {
-	/* styling stuff */
-	background-color: yellow;
+	
 	padding: 3rem;
 
 	/* as a flex item, grow as needed, shrink as needed, and only take up as much space as required */
